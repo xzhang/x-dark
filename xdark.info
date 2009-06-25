@@ -1,0 +1,10 @@
+name = X'Dark
+description = X'Dark theme.
+version = 0.1
+core = 6.x
+engine = phptemplate
+
+base theme = ninesixty
+
+stylesheets[all][] = css/style.css
+stylesheets[all][] = css/form.css

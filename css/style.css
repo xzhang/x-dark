@@ -1,0 +1,375 @@
+/*----------------------------------------------------------------------
+
+ * Filename:            style.css
+ * Description:         Global layout & styles
+ * Website:             http://xzhang.net
+ * Author:              Zhang Xiao <xellzhang@gmail.com>
+ 
+ == STRUCTURE: =========================================================
+ 
+ * Page width:          960px;
+ * Number of columns:   2;
+ 
+ == SEGMENTS: ==========================================================
+ 
+ * __site-header        Site header
+ * __primary-links      Primary links
+ * __main               Main area
+ * __content            Everything within the content
+
+----------------------------------------------------------------------*/
+
+body {
+  background: #0C0C0C;
+  font-family: "Lucida Grande", Calibri, Helvetica, Arial;
+  font-size: 13px;
+  color: #333;
+}
+a {
+  text-decoration: none;
+  color: #FF6600;
+}
+a:hover {
+  color: #FF8A00;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+p {
+  line-height: 1.8em;
+}
+
+/* __site-header
+----------------------------------------------------------------------*/
+#site-header {
+  margin-bottom: 0;
+}
+#site-name a{
+  font-size: 2em;
+  color: #DDD;
+}
+/* __secondary-links
+----------------------------------------------------------------------*/
+ul.secondary-menu {
+  float: right;
+  font-size: 0.8em;
+  margin: 5px 0;
+}
+ul.secondary-menu a {
+  color: #AAA;
+}
+ul.secondary-menu a:hover,
+ul.secondary-menu li.active a {
+  color: #FFF;
+}
+/* __search-box
+----------------------------------------------------------------------*/
+#search-box {
+
+}
+#search {
+  padding: 5px 10px;
+  background: #333;
+}
+#search:hover {
+  background: #555;
+}
+#edit-search-theme-form-1 {
+  border: none;
+  background: transparent;
+  width: 140px;
+  color: #999;
+}
+#search:hover #edit-search-theme-form-1 {
+  color: #CCC;
+}
+#search .form-submit {
+  border: none;
+  background: #222;
+  color: #999;
+}
+/* __primary-links
+----------------------------------------------------------------------*/
+#primary-links {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-top: 20px;
+}
+ul.main-menu {
+  
+}
+ul.main-menu li {
+  margin: 0;
+  padding: 0;
+}
+ul.main-menu li a {
+  color: #999;
+  display: inline-block;
+  padding: 5px 15px;
+  background: #333;
+}
+ul.main-menu li a:hover {
+  background: #555;
+  color: #CCC;
+}
+ul.main-menu li.active a {
+  color: #333;
+  background: #FFF;
+}
+
+/* __site-body
+----------------------------------------------------------------------*/
+#site-body {
+  
+}
+#main {
+  background: #FFF;
+  padding-top: 10px;
+}
+#right {
+  
+}
+/* __primary-tab
+----------------------------------------------------------------------*/
+ul.primary {
+  background: #DDD;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+ul.primary li {
+
+}
+ul.primary li a {
+  background: transparent;
+  border: none;
+  color: #444;
+  display: inline-block;
+  font-size: 0.9em;
+  padding: 5px 10px;
+}
+ul.primary li a:hover {
+  background: #EEE;
+}
+ul.primary li.active a {
+  background: #FFF;
+  border: none;
+}
+/* __page-title
+----------------------------------------------------------------------*/
+#main h2 {
+  background: #EEE;  
+  color: #444;
+  margin: 0;
+  padding: 15px;
+}
+#page-title {
+
+  border-bottom: 1px solid #DDD;
+}
+/* __messages
+----------------------------------------------------------------------*/
+#messages {
+  margin: 10px 0;
+}
+#messages .messages {
+  color: #333;
+  font-size: 0.9em;
+  padding: 5px 10px;
+}
+#messages .status {
+  background: #E1FFDD;
+  border: 1px solid #C0F0C0;
+  border-left: none;
+  border-right: none;
+}
+#messages .warning {
+  background: #FFFFDD;
+  border: 1px solid #F0C020;
+  border-left: none;
+  border-right: none;
+}
+#messages .error {
+  background: #FFCCCC;
+  border: 1px solid #DD7777;
+  border-left: none;
+  border-right: none;
+}
+/* __content
+----------------------------------------------------------------------*/
+#content {
+
+}
+#content .node h2,
+#content .node h2 a {
+  color: #444;
+  display: block;
+  font-size: 18px;
+}
+#content .node h2 {
+  margin: 0;
+  padding: 0;
+}
+#content .node h2 a {
+  padding: 15px;
+}
+#content .node h2 a:hover {
+  background: #DDD;
+}
+/* __node
+----------------------------------------------------------------------*/
+.node .submitted {
+  background: #F3F3F3;
+  font-size: 0.8em;
+  padding: 4px 15px;
+  text-align: right;
+}
+.node .content {
+  padding: 0 15px;
+}
+.node .content a {
+  border-bottom: 1px dotted #999;
+}
+.node .content a:hover {
+  border-bottom: 1px dashed #999;
+}
+.node .links {
+  background: #F3F3F3;
+  display: block;
+  font-size: 0.8em;
+  padding: 0 15px;
+  text-align: right;
+}
+.node .links li {
+  margin: 0;
+  padding: 0 0 0 20px;
+}
+.node .links li a {
+  display: inline-block;
+}
+/* __comments
+----------------------------------------------------------------------*/
+#comments,
+.comment {
+  background: #222;
+  color: #CCC;
+}
+#comments h2 {
+  background: #222;
+  color: #666;
+  font-size: 18px;
+  padding: 10px 15px;
+}
+.comment {
+  margin: 0;
+  padding: 25px 20px 5px 20px;
+}
+.comment .subject {
+  background: #333;
+  padding: 15px;
+}
+.comment .picture {
+  float: right;
+  padding-left: 15px;
+}
+.comment .picture img {
+  border: 1px solid #555;
+  padding: 0;
+  margin: 0;
+}
+.comment .content {
+  padding: 0 15px;
+}
+.comment p {
+  margin: 0;
+  padding: 0;
+}
+.comment .name,
+.comment .date {
+  float: left;
+}
+.comment .name {
+  background: url(../images/comment_arr.gif) no-repeat 15px 0;
+  color: #999;
+  font-weight: bold;
+  padding: 10px 0;
+}
+.comment .date {
+  color: #555;
+  font-size: 10px;
+  padding: 14px 10px;
+}
+.comment ul.links {
+  float: right;
+  padding: 10px;
+}
+/* __comment-form
+----------------------------------------------------------------------*/
+#comments .box .content,
+.box .content {
+  background: #444;
+  color: #CCC;
+  padding: 20px 20px;
+}
+#comment-form .grippie {
+  display: none;
+}
+#comment-form #edit-preview {
+  display: none;
+}
+
+/* __pager
+----------------------------------------------------------------------*/
+.item-list .pager {
+  background: #0C0C0C;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+}
+.item-list .pager li {
+  float: left;
+  height: 30px;
+  margin: 0 2px 0 0;
+  padding: 0;
+}
+.item-list .pager li a {
+  background: #333;
+  color: #999;
+  display: block;
+  height: 24px;
+  padding: 6px 13px 0 13px;
+}
+.item-list .pager li a:hover {
+  background: #555;
+  color: #CCC;
+}
+.item-list .pager .pager-current,
+.item-list .pager .pager-ellipsis {
+  height: 24px;
+}
+.item-list .pager .pager-current {
+  background: #FFF;
+  padding: 6px 15px 0 15px;
+}
+.item-list .pager .pager-ellipsis {
+  padding: 6px 2px 0 2px;
+}
+/* __comments-pager
+----------------------------------------------------------------------*/
+#comments .item-list .pager li a {
+  background: #1C1C1C;
+  color: #444;
+}
+#comments .item-list .pager li a:hover {
+  background: #222;
+  color: #666;
+}
+#comments .item-list .pager .pager-current {
+  background: #222;
+}
+
+
+
+
+
+

@@ -1,0 +1,30 @@
+/*----------------------------------------------------------------------
+
+ * Filename:            form.css
+ * Description:         Styles for form elements
+ * Website:             http://xzhang.net
+ * Author:              Zhang Xiao <xellzhang@gmail.com>
+ 
+----------------------------------------------------------------------*/
+
+input.form-text,
+textarea {
+  background: #999;
+  border: none;
+  padding: 5px;
+}
+input.form-text:focus,
+  textarea:focus {
+  background: #DEDEDE;
+}
+input.form-submit {
+  background: #222;
+  border: none;
+  color: #CCC;
+  cursor: pointer;
+  padding: 5px 20px;
+}
+input.form-submit:hover,
+input.form-submit:focus {
+  background: #333;
+}
