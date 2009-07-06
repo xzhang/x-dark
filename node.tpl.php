@@ -69,4 +69,5 @@
   </div>
 
   <?php print $links; ?>
+  <div class="clear-block"></div>
 </div>

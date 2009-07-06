@@ -27,16 +27,23 @@ body {
 }
 a {
   text-decoration: none;
-  color: #FF6600;
+  color: #777;
 }
 a:hover {
-  color: #FF8A00;
+  color: #BBB;
 }
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
 p {
   line-height: 1.8em;
+}
+
+/* Some containers in #content need padding */
+.profile,
+#user-profile-form,
+#node-form {
+  padding: 0 10px 10px 10px;
 }
 
 /* __site-header
@@ -46,7 +53,7 @@ p {
 }
 #site-name a{
   font-size: 2em;
-  color: #DDD;
+  color: #FF6600;
 }
 /* __secondary-links
 ----------------------------------------------------------------------*/
@@ -65,28 +72,31 @@ ul.secondary-menu li.active a {
 /* __search-box
 ----------------------------------------------------------------------*/
 #search-box {
-
+  margin-bottom: 20px;
 }
 #search {
-  padding: 5px 10px;
-  background: #333;
+
 }
 #search:hover {
-  background: #555;
+
 }
 #edit-search-theme-form-1 {
+  background: #222;
   border: none;
-  background: transparent;
-  width: 140px;
   color: #999;
+  float: left;
+  padding: 5px;
+  width: 150px;
 }
-#search:hover #edit-search-theme-form-1 {
+#edit-search-theme-form-1:hover {
+  background: #333;
   color: #CCC;
 }
 #search .form-submit {
   border: none;
-  background: #222;
   color: #999;
+  float: right;
+  padding: 4px 9px;
 }
 /* __primary-links
 ----------------------------------------------------------------------*/
@@ -99,14 +109,15 @@ ul.main-menu {
   
 }
 ul.main-menu li {
-  margin: 0;
+  float: left;
+  margin: 0 15px 0 0;
   padding: 0;
 }
 ul.main-menu li a {
   color: #999;
-  display: inline-block;
-  padding: 5px 15px;
-  background: #333;
+  display: block;
+  padding: 5px 35px;
+  background: #444;
 }
 ul.main-menu li a:hover {
   background: #555;
@@ -125,9 +136,6 @@ ul.main-menu li.active a {
 #main {
   background: #FFF;
   padding-top: 10px;
-}
-#right {
-  
 }
 /* __primary-tab
 ----------------------------------------------------------------------*/
@@ -164,8 +172,8 @@ ul.primary li.active a {
   padding: 15px;
 }
 #page-title {
-
-  border-bottom: 1px solid #DDD;
+  background: FFF;
+  border-bottom: 1px solid #CCC;
 }
 /* __messages
 ----------------------------------------------------------------------*/
@@ -234,9 +242,8 @@ ul.primary li.active a {
   border-bottom: 1px dashed #999;
 }
 .node .links {
-  background: #F3F3F3;
   display: block;
-  font-size: 0.8em;
+  font-size: 11px;
   padding: 0 15px;
   text-align: right;
 }
@@ -245,7 +252,6 @@ ul.primary li.active a {
   padding: 0 0 0 20px;
 }
 .node .links li a {
-  display: inline-block;
 }
 /* __comments
 ----------------------------------------------------------------------*/
@@ -367,9 +373,46 @@ ul.primary li.active a {
 #comments .item-list .pager .pager-current {
   background: #222;
 }
+/* __right
+----------------------------------------------------------------------*/
+#right {
+  
+}
+#right h2 {
+  background: #222;
+  margin: 0;
+  padding: 0 10px 0 0;
+  text-align: right;
+}
+#right ul {
+  margin: 0;
+  padding: 0;
+}
+#right li {
+  background: #333;
+  border-bottom: 1px solid #222;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+#right li li {
+  border: none;
+  padding: 0 0 0 20px;
+}
+#right li a {
+  display: block;
+  padding: 10px;
+}
+#right li a:hover {
+  background: #444;
+}
 
-
-
-
-
+/* __footer
+----------------------------------------------------------------------*/
+#footer {
+  background: #333;
+}
+#footer .block {
+  margin: 0;
+}
 
